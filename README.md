@@ -16,10 +16,10 @@ There are few steps you'll need to setup and a couple of different ways you can 
 cd "Desktop\CFB-and-NFL-Prediction-Analysis-main\CFB Predictions 2024-25"
 ```
 > [!CAUTION]
-> Quotation marks are only present here since the destination folder name **CFB Predictions 2024-25** contains spaces here. When you get to the **CFB-and-NFL-Prediction-Analysis** folder, it is best to press enter, then type in **cd C** and press **TAB** to autofill the folder name for you. It will automatically include the quotes so that you don't have to type them in.
+> Quotation marks are only present here since the destination folder name **CFB Predictions 2024-25** contains spaces. When you get to the **CFB-and-NFL-Prediction-Analysis** folder, it is best to press enter, then type in **cd C** and press **TAB** to autofill the folder name for you. It will automatically include the quotes so that you don't have to type them in.
 
 > [!TIP]
-> You can press **TAB** to autofill folder/file names in the command prompt for you. All you need to do is add the corresponding backslash **\\** to do another folder/file afterwards.
+> You can press **TAB** to autofill any folder/file names in the Anaconda Prompt for you. All you need to do is add the corresponding backslash **\\** to do another folder/file afterwards.
 
 5. Create an environment using the Anaconda Prompt. This is where we will download the necessary package **pandas** that the python script uses. To do this, type **conda create -n ENV_NAME**, where **ENV_NAME** represents the name you personally choose to call this environment. While you can name the environment whatever you want, it's best convention to name is something relevant to what you are doing in the environment, so for example **analysis**, **football analysis**, etc.
 6. Once you have done this, use the python package installer **pip** to install pandas. pip should already be installed from when you installed Miniconda, so all you need to do is type **pip install pandas** in your Anaconda Prompt. It will then pull and download the necessary files. If you are in a preexisting conda environment that you've made and you already have it installed but forgot, it will tell you **Requirement Satisfied** for each download needed for the package.
