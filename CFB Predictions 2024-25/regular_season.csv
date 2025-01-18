@@ -1,0 +1,301 @@
+﻿Month,Day,Week,Away Team,Away Team Rank,Away Team Conference,Home Team,Home Team Rank,Home Team Conference,Slap Type,Prediction,Outcome
+August,Thursday,1,UNC,N/A,ACC,Minnesota,N/A,BIG10,LSSQ,Away,W
+August,Thursday,1,NDSU,N/A,FCS,Colorado,N/A,BIG12,LSSQ,Home,W
+August,Thursday,1,Coastal Carolina,N/A,SBC,JSU,N/A,CUSA,RSSQ,Away,W
+August,Friday,1,TCU,N/A,BIG12,Stanford,N/A,ACC,OBNL,Home,L
+August,Friday,1,Temple,N/A,AAC,Oklahoma,16,SEC,OBL,Home,W
+August,Friday,1,FAU,N/A,AAC,MSU,N/A,BIG10,OBL,Home,W
+August,Saturday,1,Clemson,14,ACC,Georgia,1,SEC,OBNLF,Home,W
+August,Saturday,1,PSU,8,BIG10,WVU,N/A,BIG12,OBNL,Away,W
+August,Saturday,1,Miami,19,ACC,Florida,N/A,SEC,OBNL,Away,W
+August,Saturday,1,Kennessaw State,N/A,CUSA,UTSA,N/A,AAC,RSSQ,Home,W
+August,Saturday,1,ODU,N/A,SBC,South Carolina,N/A,SEC,RSSQ,Home,W
+August,Saturday,1,Fresno State,N/A,MWC,Michigan,9,SEC,LDF,Home,W
+August,Saturday,1,Sam Houston,N/A,CUSA,Rice,N/A,AAC,RSSQ,Away,W
+August,Saturday,1,Georgia State,N/A,SBC,Georgia Tech,N/A,ACC,RSWP,Home,W
+August,Saturday,1,Notre Dame,7,IND,Texas A&M,20,SEC,RSSF,Home,L
+August,Saturday,1,New Mexico,N/A,MWC,Arizona,21,BIG12,RSSQ,Home,W
+August,Saturday,1,JMU,N/A,SBC,Charlotte,N/A,AAC,OBLF,Away,W
+August,Saturday,1,UTEP,N/A,CUSA,Nebraska,N/A,BIG10,RSSDF,Home,W
+September,Sunday,1,Southern Cal,23,BIG10,LSU,13,SEC,LSWP,Home,L
+September,Monday,1,Boston College,N/A,ACC,FSU,10,ACC,OUTRO,Home,L
+September,Friday,2,BYU,N/A,BIG12,SMU,N/A,ACC,RSWP,Home,L
+September,Friday,2,Duke,N/A,ACC,Northwestern,N/A,BIG10,LSSQ,Away,W
+September,Saturday,2,Texas,3,SEC,Michigan,10,BIG10,OBNL,Away,W
+September,Saturday,2,Arkansas,N/A,SEC,Oklahoma State,16,BIG12,LDF,Away,L
+September,Saturday,2,Akron,N/A,MAC,Rutgers,N/A,BIG10,LSWP,Home,W
+September,Saturday,2,Georgia Tech,N/A,ACC,Syracuse,N/A,ACC,OBNL,Away,L
+September,Saturday,2,Troy,N/A,SBC,Memphis,N/A,AAC,RSSDF,Home,W
+September,Saturday,2,Iowa State,N/A,BIG12,Iowa,21,BIG10,LSSF,Home,L
+September,Saturday,2,UMass,N/A,IND,Toledo,N/A,MAC,RSSQ,Home,W
+September,Saturday,2,ECU,N/A,AAC,ODU,N/A,SBC,LDQ,Home,L
+September,Saturday,2,South Alabama,N/A,SBC,Ohio,N/A,MAC,OBL,Home,W
+September,Saturday,2,USF,N/A,AAC,Alabama,4,SEC,OBNL,Home,W
+September,Saturday,2,Eastern Kentucky,N/A,FCS,WKU,N/A,CUSA,LDQ,Home,W
+September,Saturday,2,SJSU,N/A,MWC,Air Force,N/A,MWC,OBL,Home,L
+September,Saturday,2,Tulsa,N/A,AAC,Arkansas State,N/A,SBC,LDQ,Away,L
+September,Saturday,2,Tennessee,14,SEC,NC State,24,ACC,LDDF,Away,W
+September,Saturday,2,Colorado,N/A,BIG12,Nebraska,N/A,BIG10,OBLF,Home,W
+September,Saturday,2,Texas Tech,N/A,BIG12,Washington State,N/A,PAC12,LDWP,Home,W
+September,Saturday,2,Liberty,N/A,CUSA,New Mexico State,N/A,CUSA,RSSQ,Away,W
+September,Saturday,2,Oregon State,N/A,PAC12,San Diego State,N/A,MWC,OUTRO,Home,L
+September,Thursday,3,ASU,N/A,BIG12,Texas State,N/A,SBC,RSWP,Home,L
+September,Friday,3,UNLV,N/A,MWC,Kansas,N/A,BIG12,OBNL,Away,W
+September,Friday,3,Arizona,20,BIG12,Kansas State,14,BIG12,LSSDF,Away,L
+September,Saturday,3,LSU,16,SEC,South Carolina,N/A,SEC,DIVING,Home,L
+September,Saturday,3,Boston College,N/A,ACC,Missouri,6,SEC,LSSF,Home,W
+September,Saturday,3,Central Michigan,N/A,MAC,Illinois,N/A,BIG10,RSSQ,Home,W
+September,Saturday,3,Cincinnati,N/A,BIG12,Miami(OH),N/A,MAC,LSSQ,Away,W
+September,Saturday,3,Notre Dame,18,IND,Purdue,N/A,BIG10,LSWP,Away,W
+September,Saturday,3,SDSU,N/A,MWC,Cal,N/A,ACC,LSSQ,Home,W
+September,Saturday,3,Tulane,N/A,AAC,Oklahoma,15,SEC,LSSQ,Home,W
+September,Saturday,3,Washington State,N/A,PAC12,Washington,N/A,BIG10,LSWP,Home,L
+September,Saturday,3,WVU,N/A,BIG12,Pitt,N/A,ACC,RSSF,Home,W
+September,Saturday,3,Utah,12,BIG12,Utah State,N/A,MWC,OBNL,Away,W
+September,Saturday,3,App State,N/A,SBC,ECU,N/A,AAC,OBLF,Away,W
+September,Saturday,3,FIU,N/A,CUSA,FAU,N/A,AAC,RSSQ,Away,L
+September,Saturday,3,Vandy,N/A,SEC,Georgia State,N/A,SBC,OBL,Away,L
+September,Saturday,3,JSU,N/A,CUSA,Eastern Michigan,N/A,MAC,LSSQ,Away,L
+September,Saturday,3,Hawai'i,N/A,MWC,Sam Houston,N/A,CUSA,LDQ,Away,L
+September,Saturday,3,Maryland,N/A,BIG10,UVA,N/A,ACC,RSSQ,Home,L
+September,Saturday,3,Oregon,9,BIG10,Oregon State,N/A,PAC12,OUTRO,Away,W
+September,Thursday,4,South Alabama,N/A,SBC,App State,N/A,SBC,LSWP,Away,W
+September,Friday,4,Stanford,N/A,ACC,Syracuse,N/A,ACC,RSSQ,Home,L
+September,Friday,4,Illinois,24,BIG10,Nebraska,22,BIG10,LDS,Home,L
+September,Friday,4,SJSU,N/A,MWC,Washington State,N/A,PAC12,LSSQ,Home,W
+September,Saturday,4,Tulane,N/A,AAC,Louisiana,N/A,SBC,RSSQ,Away,W
+September,Saturday,4,Rice,N/A,AAC,Army,N/A,AAC,LDWP,Home,W
+September,Saturday,4,Ohio,N/A,MAC,Kentucky,N/A,SEC,LSSF,Home,W
+September,Saturday,4,Southern Miss,N/A,SBC,JSU,N/A,CUSA,OBL,Home,W
+September,Saturday,4,Georgia Tech,N/A,ACC,Louisville,19,ACC,DIVING,Away,L
+September,Saturday,4,Buffalo,N/A,MAC,NIU,23,MAC,DIVING,Home,L
+September,Saturday,4,Utah,12,BIG12,Oklahoma State,14,BIG12,OBNL,Away,W
+September,Saturday,4,Miami,8,ACC,USF,N/A,AAC,RSSF,Away,W
+September,Saturday,4,Tulsa,N/A,AAC,LaTech,N/A,CUSA,LSSQ,Home,L
+September,Saturday,4,New Mexico State,N/A,CUSA,Sam Houston,N/A,CUSA,RSSQ,Home,W
+September,Saturday,4,Tennessee,6,SEC,Oklahoma,15,SEC,LDF,Away,W
+September,Saturday,4,Bowling Green,N/A,MAC,Texas A&M,25,SEC,OBLF,Home,W
+September,Saturday,4,Fresno State,N/A,MWC,New Mexico,N/A,MWC,LSSQ,Away,W
+September,Saturday,4,Purdue,N/A,BIG10,Oregon State,N/A,PAC12,RSWP,Home,W
+September,Saturday,4,Kansas State,13,BIG12,BYU,N/A,BIG12,DIVING,Away,L
+September,Saturday,4,Southern Cal,11,BIG10,Michigan,18,BIG10,OUTRO,Away,L
+September,Thursday,5,Army,N/A,AAC,Temple,N/A,AAC,RSSQ,Away,W
+September,Friday,5,Virginia Tech,N/A,ACC,Miami,7,ACC,LDQ,Home,W
+September,Friday,5,Washington,N/A,BIG10,Rutgers,N/A,BIG10,LSSQ,Away,L
+September,Saturday,5,Kentucky,N/A,SEC,Ole Miss,6,SEC,OBNL,Home,L
+September,Saturday,5,Oklahoma State,20,BIG12,Kansas State,23,BIG12,DIVING,Home,W
+September,Saturday,5,NIU,N/A,MAC,NC State,N/A,ACC,RSSF,Home,W
+September,Saturday,5,Navy,N/A,AAC,UAB,N/A,AAC,LSSQ,Away,W
+September,Saturday,5,Texas State,N/A,SBC,Sam Houston,N/A,CUSA,LDWP,Home,W
+September,Saturday,5,Louisville,15,ACC,Notre Dame,16,IND,RSSQ,Away,L
+September,Saturday,5,Colorado,N/A,BIG12,UCF,N/A,BIG12,LSWP,Home,L
+September,Saturday,5,Fresno State,N/A,MWC,UNLV,N/A,MWC,OBL,Home,W
+September,Saturday,5,Georgia Southern,N/A,SBC,Georgia State,N/A,SBC,LSSQ,Home,L
+September,Saturday,5,Western Michigan,N/A,MAC,Marshall,N/A,SBC,LDQ,Away,L
+September,Saturday,5,Eastern Michigan,N/A,MAC,Kent State,N/A,MAC,RSSQ,Away,W
+September,Saturday,5,UNC,N/A,ACC,Duke,N/A,ACC,LDF,Home,W
+September,Saturday,5,Tulsa,N/A,AAC,North Texas,N/A,AAC,OBNL,Home,W
+September,Saturday,5,Illinois,19,BIG10,PSU,9,BIG10,DIVING,Home,W
+September,Saturday,5,New Mexico,N/A,MWC,New Mexico State,N/A,CUSA,LSSQ,Home,L
+September,Saturday,5,Washington State,N/A,PAC12,Boise State,25,MWC,RSSQ,Away,L
+September,Saturday,5,Oregon,8,BIG10,UCLA,N/A,BIG10,OBLF,Home,L
+September,Saturday,5,Georgia,2,SEC,Alabama,4,SEC,OUTRO,Home,W
+October,Thursday,6,Texas State,N/A,SBC,Troy,N/A,SBC,LSSQ,Away,W
+October,Thursday,6,Sam Houston,N/A,CUSA,UTEP,N/A,CUSA,LDQ,Away,W
+October,Friday,6,JSU,N/A,CUSA,Kennessaw State,N/A,CUSA,RSSQ,Away,W
+October,Friday,6,Houston,N/A,BIG12,TCU,N/A,BIG12,FT,Home,L
+October,Friday,6,MSU,N/A,BIG10,Oregon,N/A,BIG10,OBNL,Home,W
+October,Friday,6,Syracuse,N/A,ACC,UNLV,25,MWC,DIVING,Home,L
+October,Saturday,6,Boston College,N/A,ACC,UVA,N/A,ACC,LSWP,Home,W
+October,Saturday,6,Navy,N/A,AAC,Air Force,N/A,AAC,DIVING,Away,W
+October,Saturday,6,Western Michigan,N/A,MAC,Ball State,N/A,MWC,RSWP,Home,L
+October,Saturday,6,Iowa,N/A,BIG10,OSU,3,BIG10,LSSF,Home,W
+October,Saturday,6,Ole Miss,12,SEC,South Carolina,N/A,SEC,DIVING,Away,W
+October,Saturday,6,Miami(OH),N/A,MAC,Toledo,N/A,MAC,RSSQ,Home,W
+October,Saturday,6,ECU,N/A,AAC,Charlotte,N/A,AAC,LSSQ,Away,L
+October,Saturday,6,Rutgers,N/A,BIG10,Nebraska,N/A,BIG10,OBL,Home,W
+October,Saturday,6,ODU,N/A,SBC,Coastal Carolina,N/A,SBC,LDWP,Home,W
+October,Saturday,6,Baylor,N/A,BIG12,Iowa State,16,BIG12,RSSQ,Away,L
+October,Saturday,6,Duke,N/A,ACC,Georgia Tech,N/A,ACC,LDQ,Home,W
+October,Saturday,6,Colorado State,N/A,MWC,Oregon State,N/A,PAC12,LSSQ,Home,W
+October,Saturday,6,Hawai'i,N/A,MWC,SDSU,N/A,MWC,FT,Away,L
+October,Saturday,6,Missouri,9,SEC,Texas A&M,25,SEC,OUTRO,Home,W
+October,Thursday,7,Coastal Carolina,N/A,SBC,JMU,N/A,SBC,FT,Home,W
+October,Thursday,7,MTSU,N/A,CUSA,LaTech,N/A,CUSA,RSSQ,Home,W
+October,Thursday,7,UTEP,N/A,CUSA,WKU,N/A,CUSA,LSSQ,Home,W
+October,Friday,7,Memphis,N/A,AAC,USF,N/A,AAC,LDWP,Home,L
+October,Friday,7,Northwestern,N/A,BIG10,Maryland,N/A,BIG10,OBNL,Home,L
+October,Friday,7,UNLV,N/A,MWC,Utah State,N/A,MWC,RSSQ,Away,W
+October,Friday,7,Utah,16,BIG12,ASU,N/A,BIG12,OBLF,Home,W
+October,Saturday,7,PSU,4,BIG10,Southern Cal,N/A,BIG10,LSSQ,Away,W
+October,Saturday,7,Cal,N/A,ACC,Pitt,22,ACC,DIVING,Home,W
+October,Saturday,7,Louisville,N/A,ACC,UVA,N/A,ACC,FT,Away,W
+October,Saturday,7,NIU,N/A,MAC,Bowling Green,N/A,MAC,RSWP,Home,L
+October,Saturday,7,Arizona,N/A,BIG12,BYU,14,BIG12,OBNL,Home,W
+October,Saturday,7,Ohio,N/A,MAC,Central Michigan,N/A,MAC,LSWP,Home,W
+October,Saturday,7,Southern Miss,N/A,SBC,UL Monroe,N/A,SBC,LDQ,Home,W
+October,Saturday,7,Washington State,N/A,PAC12,Fresno State,N/A,MWC,FT,Away,W
+October,Saturday,7,OSU,2,BIG10,Oregon,3,BIG10,OBNL,Away,L
+October,Saturday,7,North Texas,N/A,AAC,FAU,N/A,AAC,LSSQ,Away,W
+October,Saturday,7,Ole Miss,9,SEC,LSU,13,SEC,DIVING,Home,W
+October,Saturday,7,Oregon State,N/A,PAC12,Nevada,N/A,MWC,RSSQ,Away,L
+October,Saturday,7,Iowa State,11,BIG12,WVU,N/A,BIG12,DIVING,Away,W
+October,Saturday,7,Kansas State,18,BIG12,Colorado,N/A,BIG12,DIVING,Home,L
+October,Saturday,7,Texas,1,SEC,Oklahoma,18,SEC,OUTRO,Away,W
+October,Thursday,8,Georgia State,N/A,SBC,Marshall,N/A,SBC,LSWP,Home,W
+October,Thursday,8,Boston College,N/A,ACC,Virginia Tech,N/A,ACC,RSSQ,Away,L
+October,Friday,8,FSU,N/A,ACC,Duke,N/A,ACC,LDQ,Home,W
+October,Friday,8,Oregon,2,BIG10,Purdue,N/A,BIG10,DIVING,Away,W
+October,Friday,8,Oklahoma State,N/A,BIG12,BYU,13,BIG12,OBL,Home,W
+October,Friday,8,Fresno State,N/A,MWC,Nevada,N/A,MWC,LSSQ,Home,L
+October,Saturday,8,Nebraska,N/A,BIG10,Indiana,16,BIG10,DIVING,Away,L
+October,Saturday,8,Wake Forest,N/A,ACC,UCONN,N/A,IND,FT,Away,W
+October,Saturday,8,ECU,N/A,AAC,Army,23,AAC,FT,Home,W
+October,Saturday,8,Alabama,7,SEC,Tennessee,11,SEC,OBNL,Away,L
+October,Saturday,8,Notre Dame,12,IND,Georgia Tech,N/A,ACC,OBLF,Home,L
+October,Saturday,8,Texas State,N/A,SBC,ODU,N/A,SBC,LDQ,Away,L
+October,Saturday,8,Ohio,N/A,MAC,Miami(OH),N/A,MAC,RSWP,Away,L
+October,Saturday,8,Hawai'i,N/A,MWC,Washington State,N/A,PAC12,LSSQ,Home,W
+October,Saturday,8,Michigan,24,BIG10,Illinois,22,BIG10,DIVING,Home,W
+October,Saturday,8,Houston,N/A,BIG12,Kansas,N/A,BIG12,LSWP,Home,W
+October,Saturday,8,FAU,N/A,AAC,UTSA,N/A,AAC,LDWP,Away,L
+October,Saturday,8,Baylor,N/A,BIG12,Texas Tech,N/A,BIG12,OBL,Away,W
+October,Saturday,8,Wyoming,N/A,MWC,SJSU,N/A,MWC,RSSQ,Home,W
+October,Saturday,8,Ball State,N/A,MAC,Vandy,N/A,SEC,FT,Home,W
+October,Saturday,8,Arkansas State,N/A,SBC,Southern Miss,N/A,SBC,LSSQ,Away,W
+October,Saturday,8,SMU,21,ACC,Stanford,N/A,ACC,DIVING,Away,W
+October,Saturday,8,UNLV,N/A,MWC,Oregon State,N/A,PAC12,OBNL,Away,W
+October,Saturday,8,Georgia,5,SEC,Texas,1,SEC,OUTRO,Home,L
+October,Thursday,9,Georgia Southern,N/A,SBC,ODU,N/A,SBC,LDQ,Away,L
+October,Thursday,9,Syracuse,N/A,ACC,Pitt,19,ACC,LDQ,Home,W
+October,Friday,9,Louisville,N/A,ACC,Boston College,N/A,ACC,LSSQ,Home,L
+October,Friday,9,Boise State,17,MWC,UNLV,N/A,MWC,OBNL,Away,W
+October,Friday,9,Rutgers,N/A,BIG10,Southern Cal,N/A,BIG10,RSSQ,Home,W
+October,Saturday,9,UNC,N/A,ACC,UVA,N/A,ACC,FT,Home,L
+October,Saturday,9,Tulane,N/A,AAC,North Texas,N/A,AAC,LSWP,Away,W
+October,Saturday,9,Missouri,21,SEC,Alabama,15,SEC,DIVING,Home,W
+October,Saturday,9,Buffalo,N/A,MAC,Ohio,N/A,MAC,RSWP,Home,W
+October,Saturday,9,Rice,N/A,AAC,UCONN,N/A,IND,OBL,Home,W
+October,Saturday,9,Southern Miss,N/A,SBC,JMU,N/A,SBC,LDQ,Home,W
+October,Saturday,9,New Mexico,N/A,MWC,Colorado State,N/A,MWC,LSSQ,Home,W
+October,Saturday,9,Notre Dame,12,IND,Navy,24,AAC,DIVING,Away,W
+October,Saturday,9,UL Monroe,N/A,SBC,South Alabama,N/A,SBC,RSSQ,Home,W
+October,Saturday,9,Bowling Green,N/A,MAC,Toledo,N/A,MAC,LDWP,Home,L
+October,Saturday,9,WVU,N/A,BIG12,Arizona,N/A,BIG12,FALLING,Home,L
+October,Saturday,9,MSU,N/A,BIG10,Michigan,N/A,BIG10,FT,Home,W
+October,Saturday,9,Illinois,20,BIG10,Oregon,1,BIG10,DIVING,Home,W
+October,Saturday,9,Oregon State,N/A,PAC12,Cal,N/A,ACC,LDQ,Away,L
+October,Saturday,9,Cincinnati,N/A,BIG12,Colorado,N/A,BIG12,OBLF,Home,W
+October,Saturday,9,Washington State,N/A,PAC12,SDSU,N/A,MWC,FT,Away,W
+October,Saturday,9,LSU,8,SEC,Texas A&M,14,SEC,OUTRO,Home,W
+November,Thursday,10,Tulane,N/A,AAC,Charlotte,N/A,AAC,RSSQ,Away,W
+November,Friday,10,Georgia State,N/A,SBC,UCONN,N/A,IND,LSSQ,Away,L
+November,Friday,10,SDSU,N/A,MWC,Boise State,15,MWC,LDQ,Home,W
+November,Friday,10,USF,N/A,AAC,FAU,N/A,AAC,OBNL,Home,L
+November,Saturday,10,Air Force,N/A,MWC,Army,21,AAC,DIVING,Home,W
+November,Saturday,10,Ole Miss,19,SEC,Arkansas,N/A,SEC,RSSQLS,Home,L
+November,Saturday,10,Toledo,N/A,MAC,Eastern Michigan,N/A,MAC,LSWP,Home,L
+November,Saturday,10,Vandy,N/A,SEC,Auburn,N/A,SEC,FT,Away,W
+November,Saturday,10,Pitt,18,ACC,SMU,20,ACC,DIVING,Home,W
+November,Saturday,10,ODU,N/A,SBC,App State,N/A,SBC,LDQ,Away,L
+November,Saturday,10,UL Monroe,N/A,SBC,Marshall,N/A,SBC,RSWP,Home,W
+November,Saturday,10,Memphis,N/A,AAC,UTSA,N/A,AAC,LSSQ,Away,L
+November,Saturday,10,Texas Tech,N/A,BIG12,Iowa State,11,BIG12,FT,Home,L
+November,Saturday,10,Georgia Southern,N/A,SBC,South Alabama,N/A,SBC,FALLING,Home,L
+November,Saturday,10,Buffalo,N/A,MAC,Akron,N/A,MAC,RSSQ,Away,W
+November,Saturday,10,Indiana,13,BIG10,MSU,N/A,BIG10,FALLING,Away,W
+November,Saturday,10,MTSU,N/A,CUSA,UTEP,N/A,CUSA,LDWP,Home,L
+November,Saturday,10,Louisville,N/A,ACC,Clemson,11,ACC,OBL,Home,L
+November,Saturday,10,TCU,N/A,BIG12,Baylor,N/A,BIG12,FT,Home,W
+November,Saturday,10,Hawai'i,N/A,MWC,Fresno State,N/A,MWC,LDQ,Home,L
+November,Saturday,10,Southern Cal,N/A,BIG10,Washington,N/A,BIG10,OBLF,Home,W
+November,Saturday,10,OSU,4,BIG10,PSU,3,BIG10,OUTRO,Away,W
+November,Thursday,11,App State,N/A,SBC,Coastal Carolina,N/A,SBC,LSWP,Home,W
+November,Thursday,11,FAU,N/A,AAC,ECU,N/A,AAC,LDQ,Home,W
+November,Friday,11,Cal,N/A,ACC,Wake Forest ,N/A,ACC,RSSQ,Away,W
+November,Friday,11,Iowa,N/A,BIG10,UCLA,N/A,BIG10,LSSQ,Away,L
+November,Friday,11,Rice,N/A,AAC,Memphis,N/A,AAC,FT,Home,W
+November,Friday,11,New Mexico,N/A,MWC,SDSU,N/A,MWC,LDWP,Home,L
+November,Saturday,11,Miami,4,ACC,Georgia Tech,N/A,ACC,OBNL,Away,L
+November,Saturday,11,Minnesota,N/A,BIG10,Rutgers,N/A,BIG10,HB,Away,L
+November,Saturday,11,Arkansas State,N/A,SBC,Louisiana,N/A,SBC,LSSF,Home,W
+November,Saturday,11,Army,25,AAC,North Texas,N/A,AAC,RSWP,Away,W
+November,Saturday,11,SJSU,N/A,MWC,Oregon State,N/A,PAC12,LDQ,Home,L
+November,Saturday,11,Georgia,3,SEC,Ole Miss,16,SEC,OBNL,Away,L
+November,Saturday,11,Liberty,N/A,CUSA,MTSU,N/A,CUSA,RSSQ,Away,W
+November,Saturday,11,Michigan,N/A,BIG10,Indiana,8,BIG10,DIVING,Home,W
+November,Saturday,11,UNLV,N/A,MWC,Hawai'i,N/A,MWC,LSSQ,Away,W
+November,Saturday,11,Colorado,20,MWC,Texas Tech,N/A,BIG12,LDWP,Away,W
+November,Saturday,11,Duke,N/A,ACC,NC State,N/A,ACC,HB,Home,L
+November,Saturday,11,Texas State,N/A,SBC,UL Monroe,N/A,SBC,LDWP,Away,W
+November,Saturday,11,BYU,9,BIG12,Utah,N/A,BIG12,DIVING,Away,W
+November,Saturday,11,JSU,N/A,CUSA,LaTech,N/A,CUSA,RSSQ,Home,L
+November,Saturday,11,Utah State,N/A,MWC,Washington State,21,PAC12,LDQ,Home,W
+November,Saturday,11,Navy,N/A,AAC,USF,N/A,AAC,LSSQ,Away,W
+November,Saturday,11,Aalabama,11,SEC,LSU,15,SEC,OUTRO,Away,W
+November,Thursday,12,ECU,N/A,AAC,Tulsa,N/A,AAC,LSFS,Away,W
+November,Friday,12,Wyoming,N/A,MWC,Colorado State,N/A,MWC,LDFS,Home,W
+November,Friday,12,North Texas,N/A,AAC,UTSA,N/A,AAC,RSFS,Away,L
+November,Friday,12,UCLA,N/A,BIG10,Washington,N/A,BIG10,OBNL,Home,W
+November,Friday,12,Houston,N/A,BIG12,Arizona,N/A,BIG12,LDWP,Home,W
+November,Saturday,12,Clemson,20,ACC,Pitt,N/A,ACC,FALLING,Home,L
+November,Saturday,12,Tulane,N/A,AAC,Navy,N/A,AAC,LSWP,Away,W
+November,Saturday,12,JMU,N/A,SBC,ODU,N/A,SBC,RSWP,Away,W
+November,Saturday,12,OSU,2,BIG10,Northwestern,N/A,BIG10,LDQ,Away,W
+November,Saturday,12,USF,N/A,AAC,Charlotte,N/A,AAC,LSSQ,Away,W
+November,Saturday,12,Boston College,N/A,ACC,SMU,14,ACC,OBNL,Home,W
+November,Saturday,12,Baylor,N/A,BIG12,WVU,N/A,BIG12,RSSQ,Home,W
+November,Saturday,12,Missouri,23,SEC,South Carolina,21,SEC,DIVING,Away,L
+November,Saturday,12,Oregon State,N/A,PAC12,Air Force,N/A,MWC,HB,Away,L
+November,Saturday,12,Boise State,13,MWC,SJSU,N/A,MWC,OBL,Away,W
+November,Saturday,12,LaTech,N/A,CUSA,WKU,N/A,CUSA,LSSQ,Home,W
+November,Saturday,12,Washington State,18,PAC12,New Mexico,N/A,MWC,RSSQ,Away,L
+November,Saturday,12,Coastal Carolina,N/A,SBC,Marshall,N/A,SBC,LDWP,Home,W
+November,Saturday,12,Sam Houston,N/A,CUSA,Kennessaw State,N/A,CUSA,LSFS,Away,W
+November,Saturday,12,ASU,N/A,BIG12,Kansas State,16,BIG12,FALLING,Away,W
+November,Saturday,12,Nebraska,N/A,BIG10,Southern Cal,N/A,BIG10,HB,Home,W
+November,Saturday,12,Tennessee,7,SEC,Georgia,12,SEC,OUTRO,Home,W
+November,Thursday,13,NC State,N/A,ACC,Georgia Tech,N/A,ACC,RSSQ,Home,W
+November,Friday,13,Temple,N/A,AAC,UTSA,N/A,AAC,LDQ,Home,W
+November,Friday,13,Purdue,N/A,BIG10,MSU,N/A,BIG10,LSSQ,Home,W
+November,Friday,13,UNLV,24,MWC,SJSU,N/A,MWC,LSFS,Away,W
+November,Saturday,13,Boise State,12,MWC,Wyoming,N/A,MWC,OBNL,Away,W
+November,Saturday,13,WKU,N/A,CUSA,Liberty,N/A,CUSA,RSFS,Away,L
+November,Saturday,13,Army,19,AAC,Notre Dame,6,IND,LDF,Home,W
+November,Saturday,13,Tulsa,N/A,AAC,USF,N/A,AAC,LDFS,Home,W
+November,Saturday,13,Ole Miss,9,SEC,Florida,N/A,SEC,HB,Home,W
+November,Saturday,13,Troy,N/A,SBC,Louisiana,N/A,SBC,RSSQ,Home,W
+November,Saturday,13,SMU,13,ACC,UVA,N/A,ACC,FALLING,Away,W
+November,Saturday,13,Bowling Green,N/A,MAC,Ball State,N/A,MAC,LSWP,Home,L
+November,Saturday,13,BYU,14,BIG12,ASU,21,BIG12,RSWP,Home,W
+November,Saturday,13,Georgia Southern,N/A,SBC,Coastal Carolina,N/A,SBC,LSSQ,Home,L
+November,Saturday,13,Alabama,7,SEC,Oklahoma,N/A,SEC,FT,Away,L
+November,Saturday,13,Colorado State,N/A,MWC,Fresno State,N/A,MWC,LDQ,Home,W
+November,Saturday,13,Colorado,16,BIG12,Kansas,N/A,BIG12,OBLF,Away,L
+November,Saturday,13,ECU,N/A,AAC,North Texas,N/A,AAC,RSSQ,Home,L
+November,Saturday,13,Washington State,N/A,PAC12,Oregon State,N/A,PAC12,DIVING,Away,L
+November,Saturday,13,Sam Houston,N/A,CUSA,JSU,N/A,CUSA,LDWP,Home,W
+November,Saturday,13,Wake Forest,N/A,ACC,Miami,8,ACC,DIVING,Home,W
+November,Saturday,13,Wisconsin,N/A,BIG10,Nebraska,N/A,BIG10,HB,Away,L
+November,Saturday,13,Indiana,5,BIG10,OSU,2,BIG10,OUTRO,Home,W
+November,Thursday,14,Memphis,N/A,AAC,Tulane,17,AAC,LSSQ,Home,L
+November,Friday,14,Oregon State,N/A,PAC12,Boise State,11,MWC,RSSQ,Home,W
+November,Friday,14,Georgia Tech,N/A,ACC,Georgia,7,SEC,LSFS,Home,W
+November,Friday,14,Navy,N/A,AAC,ECU,N/A,AAC,LDFS,Away,W
+November,Friday,14,Ball State,N/A,MAC,Ohio,N/A,MAC,RSFS,Home,W
+November,Friday,14,Nebraska,N/A,BIG10,Iowa State,N/A,BIG10,LDQ,Home,W
+November,Saturday,14,Washington,N/A,BIG10,Oregon,1,BIG10,HB,Home,W
+November,Saturday,14,Louisville,N/A,ACC,Kentucky,N/A,SEC,RSSQ,Away,W
+November,Saturday,14,Auburn,N/A,SEC,Alabama,13,SEC,FALLING,Home,W
+November,Saturday,14,UVA,N/A,ACC,Virginia Tech,N/A,ACC,HB,Home,W
+November,Saturday,14,Michigan,N/A,BIG10,OSU,2,BIG10,OBNL,Home,L
+November,Saturday,14,Florida,N/A,SEC,FSU,N/A,ACC,LSSQ,Away,W
+November,Saturday,14,ASU,16,BIG12,Arizona,N/A,BIG12,OBL,Away,W
+November,Saturday,14,Louisiana,N/A,SBC,UL Monroe,N/A,SBC,RSFS,Away,W
+November,Saturday,14,Eastern Michigan,N/A,MAC,Western Michigan,N/A,MAC,LDWP,Home,W
+November,Saturday,14,South Carolina,15,SEC,Clemson,12,ACC,DIVING,Home,L
+November,Saturday,14,Marshall,N/A,SBC,JMU,N/A,SBC,FT,Home,L
+November,Saturday,14,Notre Dame,5,IND,Southern Cal,N/A,BIG10,DIVING,Away,W
+November,Saturday,14,Wyoming,N/A,MWC,Washington State,N/A,PAC12,LDQ,Home,L
+November,Saturday,14,JSU,N/A,CUSA,JSU,N/A,CUSA,LSSQ,Away,L
+November,Saturday,14,Texas,3,SEC,Texas A&M,25,SEC,OUTRO,Away,W
