@@ -7,7 +7,7 @@ This repository hosts how I analyzed my prediction data for both College Footbal
 # Using any Analysis Script
 There are few steps you'll need to setup and a couple of different ways you can choose to do this
 
-## OPTION 1: Using the Command Line
+## OPTION 1: Using the Anaconda Prompt
 1. Download the latest version of [Miniconda]([https://www.python.org/downloads/](https://www.anaconda.com/download/success)). You will need to scroll down the page to see the Miniconda installers, and then choose the appropriate installer for your system (Windows, Mac, or Linux). When following the launcher, if it gives you the option to add it to your PATH variable, select yes.
 2. Using you computer's search feature, find the **Anaconda Prompt**. Don't worry about the name of this prompt, it is still running Miniconda.
 3. Download this repository by cliking on **Code > Download ZIP** at the top of the main page of the repository. Extract all files from the .zip file to wherever you want on your device when it is finished downloading.
