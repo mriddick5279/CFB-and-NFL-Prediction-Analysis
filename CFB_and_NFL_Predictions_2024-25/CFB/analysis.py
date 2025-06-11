@@ -1,6 +1,17 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
+
+import argparse
+
+"""
+Testing for future argument parsing to load NFL season file of user's choice
+"""
+parser = argparse.ArgumentParser(description="Load CFB season file")
+
+parser.add_argument("year", type=str, help="CFB season year of file to analyze")
+args = parser.parse_args()
+
+print(f"{args.year}regular_season.csv")
 
 # Loading dataset
 df = pd.read_csv('regular_season.csv')
