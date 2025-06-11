@@ -18,7 +18,7 @@ parser.add_argument("--year",type=str,default='2024',required=False,help="NFL/CF
 args = parser.parse_args()
 
 # Checking if season year for either league exists
-if int(args.year) < 2024:
+if int(args.year) >= 2024:
     if args.league.upper() == 'CFB': # CFB was selected, run CFB analysis
         season_file = f"{args.year}regular_season.csv"
         cfb.run(season_file)
