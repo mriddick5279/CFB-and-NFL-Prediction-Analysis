@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Loading dataset
 df = pd.read_csv('regular_season.csv')
@@ -20,6 +21,20 @@ print(f"Home Game Record: {home_wins}-{home_losses}")
 away_wins = len(away_predictions[away_predictions['Outcome'] == 'W'])
 away_losses = len(away_predictions[away_predictions['Outcome'] == 'L'])
 print(f"Away Game Record: {away_wins}-{away_losses}\n")
+
+# Creating stacked bar plot for overall W/L
+labels = ['Home','Away']
+top = [home_losses, away_losses]
+bott = [home_wins, away_wins]
+
+plt.bar(labels, bott, color='g')
+plt.bar(labels, top, bottom=bott, color='r')
+plt.title("Home and Away Record Breakdown")
+plt.ylabel("Games", fontsize=15)
+plt.yticks(fontsize=10)
+plt.legend(["Wins", "Losses"])
+plt.savefig("Outputs\\home_away_wins_and_losses_plot.png")
+plt.close()
 
 # Determining record among conferences
 conference_records = {'AAC': [0,0], 'ACC': [0,0], 'BIG10': [0,0], 'BIG12': [0,0], 'CUSA': [0,0],'MAC': [0,0], 'MWC': [0,0], 'PAC12': [0,0], 'SBC': [0,0], 'SEC': [0,0]}
@@ -47,9 +62,25 @@ for item in df.itertuples():
             curr_losses = conference_records['PAC12'][1]
             conference_records['PAC12'][1] = curr_losses + 1
 
+labels = []
+top = []
+bott = []
 for key, value in conference_records.items():
     print(f"{key} Record: {value[0]}-{value[1]}")
+    labels.append(key)
+    top.append(value[1])
+    bott.append(value[0])
 print()
+
+# Creating stacked bar plot for conference W/L 
+plt.bar(labels, bott, color='g')
+plt.bar(labels, top, bottom=bott, color='r')
+plt.title("Conference Wins and Losses Breakdown")
+plt.ylabel("Games", fontsize=15)
+plt.yticks(fontsize=10)
+plt.legend(["Wins", "Losses"])
+plt.savefig("Outputs\\conf_wins_and_losses_plot.png")
+plt.close()
 
 # Determining record for games involving ranked teams
 ranked_record = {'One': [0,0], 'Both': [0,0]}
