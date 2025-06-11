@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import math
 
 def run(file):
 
@@ -71,6 +72,8 @@ def run(file):
         labels = []
         top = []
         bott = []
+
+        print('AFC Divison Matchup Records:')
         for k, v in afc_records.items():
             print(f"AFC {k}: {v[0]}-{v[1]}")
             labels.append(k)
@@ -92,6 +95,8 @@ def run(file):
         labels = []
         top = []
         bott = []
+
+        print('NFC Divison Matchup Records:')
         for k, v in nfc_records.items():
             print(f"NFC {k}: {v[0]}-{v[1]}")
             labels.append(k)
@@ -107,6 +112,34 @@ def run(file):
         plt.legend(["Correct", "Incorrect"])
         plt.savefig("NFL\\Outputs\\nfc_wins_and_losses_plot.png")
         plt.close()
+
+        print()
+
+        seen = []
+        print("Slap type records:")
+        for st in set(df['Slap Type']):
+            if st == st and st not in seen:
+                seen.append(st)
+
+                stDF = df[df['Slap Type'] == st]
+                slap_wins = len(stDF[stDF['Outcome'] == 'W'])
+                slap_losses = len(stDF[stDF['Outcome'] == 'L'])
+
+                print(f"Total {st} Record: {slap_wins}-{slap_losses}")
+
+                sthomeDF = stDF[stDF['Prediction'] == 'Home']
+                stawayDF = stDF[stDF['Prediction'] == 'Away']
+
+                slap_wins_home = len(sthomeDF[sthomeDF['Outcome'] == 'W'])
+                slap_losses_home = len(sthomeDF[sthomeDF['Outcome'] == 'L'])
+
+                slap_wins_away = len(stawayDF[stawayDF['Outcome'] == 'W'])
+                slap_losses_away = len(stawayDF[stawayDF['Outcome'] == 'L'])
+
+                print(f"\tHome Breakdown: {slap_wins_home}-{slap_losses_home}")
+                print(f"\tAway Breakdown: {slap_wins_away}-{slap_losses_away}\n")
+        
+        del(seen)
     
     except:
         print("ERROR: Season file most likely not available")
