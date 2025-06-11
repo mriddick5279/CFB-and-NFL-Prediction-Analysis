@@ -66,6 +66,8 @@ def run(file):
         labels = []
         top = []
         bott = []
+
+        print("Conference Matchup Records:")
         for key, value in conference_records.items():
             print(f"{key} Record: {value[0]}-{value[1]}")
             labels.append(key)
@@ -123,6 +125,7 @@ def run(file):
         # Includes total overall record, home record, and away record for each slap type
         slap_types = ['LSSQ','RSSQ','LDQ','LSFS','RSFS','LDFS','LSWP','RSWP','LDWP','OBNL','OBL','OBNLF','OBLF','LSSF','LSSDF','RSSF','RSSDF','RSSQLS','LDF','LDS','LDDF','HB','FT','DIVING','FALLING','OUTRO']
 
+        print("Slap type records:")
         for st in slap_types:
             stDF = df[df['Slap Type'] == st]
             slap_wins = len(stDF[stDF['Outcome'] == 'W'])
