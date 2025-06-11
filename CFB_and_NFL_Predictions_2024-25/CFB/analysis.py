@@ -32,14 +32,13 @@ plt.bar(labels, top, bottom=bott, color='r')
 plt.title("Home and Away Record Breakdown")
 plt.ylabel("Games", fontsize=15)
 plt.yticks(fontsize=10)
-plt.legend(["Wins", "Losses"])
+plt.legend(["Correct", "Incorrect"])
 plt.savefig("Outputs\\home_away_wins_and_losses_plot.png")
 plt.close()
 
 # Determining record among conferences
 conference_records = {'AAC': [0,0], 'ACC': [0,0], 'BIG10': [0,0], 'BIG12': [0,0], 'CUSA': [0,0],'MAC': [0,0], 'MWC': [0,0], 'PAC12': [0,0], 'SBC': [0,0], 'SEC': [0,0]}
 
-yes = 0; no = 0
 for item in df.itertuples():
 
     if item[6] == item[9]:
@@ -78,7 +77,7 @@ plt.bar(labels, top, bottom=bott, color='r')
 plt.title("Conference Wins and Losses Breakdown")
 plt.ylabel("Games", fontsize=15)
 plt.yticks(fontsize=10)
-plt.legend(["Wins", "Losses"])
+plt.legend(["Correct", "Incorrect"])
 plt.savefig("Outputs\\conf_wins_and_losses_plot.png")
 plt.close()
 
