@@ -60,3 +60,11 @@ python main.py cfb --year 2025
 
 > [!NOTE]
 > If you ever forget how to do this, you can type ```python main.py -h```. This will show instructions on what the command is supposed to do and how to use it.
+
+# Visuals
+
+There are a few graphs available to view here if you traverse into the **Outputs** directory in both the NFL and CFB directories. To get the full breakdown you will need to follow the instructions above up to here, but if you just want to see the graphs you are more than able too!
+
+# Thank you
+
+If you took the time to read through this or simply just visit this project, thank you so much! It's nothing fancy I know, but it's a fun way to familiarize myself more with Python and the pandas and matplotlib packages. This project will be updated over time as more NFL and CFB seasons come and go, so this isn't the end of the project by a long shot. Thanks again, and please visit again from time to time to see if there have been any updates!
