@@ -2,7 +2,7 @@
 This repository hosts how I analyzed my prediction data for both College Football and the NFL for each I season I did predictions for. It's all written in Python and utilizes pandas. CSV files are included
 
 >[!NOTE]
-> Part of the analysis includes the "Slap Types" that I used for each game and the records associated with them. Most are acronyms of sorts, so I have left a legend/key of sorts at the bottom of this README file to follow to tell what each one stands for. The record for each slap type essentially means, when I predicted a game using this slap type, was I right or wrong.
+> Part of the analysis includes the "Slap Types" that I used for each game and the records associated with them (more of a visual thing found on my TikTok). Most are acronyms of sorts, so I have left a legend/key of sorts at the bottom of this README file to follow to tell what each one stands for. The record for each slap type essentially means, when I predicted a game using this slap type, was I right or wrong.
 
 # Using any Analysis Script
 There are few steps you'll need to setup and a couple of different ways you can choose to do this
