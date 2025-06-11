@@ -7,8 +7,6 @@ def run(file):
         # Loading dataset
         df = pd.read_csv(f'NFL\\Seasons\\{file}')
 
-        # print(df.info())
-
         # Getting total win loss record
         wins = len(df[df['Outcome'] == 'W'])
         losses = len(df[df['Outcome'] == 'L'])
@@ -114,6 +112,8 @@ def run(file):
 
         print()
 
+        # Record breakdown for each slap type
+        # Includes total overall record, home record, and away record for each slap type
         seen = []
         print("Slap type records:")
         for st in set(df['Slap Type']):
