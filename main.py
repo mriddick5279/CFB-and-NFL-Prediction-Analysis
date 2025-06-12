@@ -19,10 +19,10 @@ args = parser.parse_args()
 
 # Checking if season year for either league exists
 if int(args.year) >= 2024:
-    if args.league.upper() == 'CFB': # CFB was selected, run CFB analysis
+    if args.league.upper() == 'CFB': # CFB was selected. Run CFB analysis
         season_file = f"{args.year}regular_season.csv"
         cfb.run(season_file)
-    if args.league.upper() == 'NFL': # NFL was selected, run NFL analysis
+    if args.league.upper() == 'NFL': # NFL was selected. Run NFL analysis
         season_file = f"{args.year}regular_season.csv"
         nfl.run(season_file)
 else:
