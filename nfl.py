@@ -8,20 +8,26 @@ def run(file):
         df = pd.read_csv(f'NFL\\Seasons\\{file}')
 
         # Getting total win loss record
-        wins = len(df[df['Outcome'] == 'W'])
-        losses = len(df[df['Outcome'] == 'L'])
+        wins = df.loc[df['Outcome'] == 'W', 'Outcome'].count()
+        losses = df.loc[df['Outcome'] == 'L', 'Outcome'].count()
         print(f"\nFinal Regular Season Record: {wins}-{losses}")
 
-        # Getting win loss records for Home and Away games
-        home_predictions = df[df['Prediction'] == 'Home']
-        away_predictions = df[df['Prediction'] == 'Away']
+        # Getting win-loss record for Home games
 
-        home_wins = len(home_predictions[home_predictions['Outcome'] == 'W'])
-        home_losses = len(home_predictions[home_predictions['Outcome'] == 'L'])
+        home_wins_mask = (df['Prediction'] == 'Home') & (df['Outcome'] == 'W')
+        home_losses_mask = (df['Prediction'] == 'Home') & (df['Outcome'] == 'L')
+
+        home_wins = df.loc[home_wins_mask, 'Outcome'].count()
+        home_losses = df.loc[home_losses_mask, 'Outcome'].count()
         print(f"Home Game Record: {home_wins}-{home_losses}")
 
-        away_wins = len(away_predictions[away_predictions['Outcome'] == 'W'])
-        away_losses = len(away_predictions[away_predictions['Outcome'] == 'L'])
+        # Getting win-loss record for Away games
+
+        away_wins_mask = (df['Prediction'] == 'Away') & (df['Outcome'] == 'W')
+        away_losses_mask = (df['Prediction'] == 'Away') & (df['Outcome'] == 'L')
+
+        away_wins = df.loc[away_wins_mask, 'Outcome'].count()
+        away_losses = df.loc[away_losses_mask, 'Outcome'].count()
         print(f"Away Game Record: {away_wins}-{away_losses}\n")
 
         # Creating stacked bar plot for overall W/L
