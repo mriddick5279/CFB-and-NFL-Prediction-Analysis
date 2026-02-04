@@ -47,11 +47,12 @@ def run(file):
 
         # Creating and plotting values
         plt.figure(figsize=(15,12))
-        plt.bar(bar1, home_values, width=barWidth, color='b', label='Home')
-        plt.bar(bar2, away_values, width=barWidth, color='r', label='Away')
+        plt.grid(axis='y', color='gray', linewidth=0.5, alpha=0.5)
+        plt.bar(bar1, home_values, width=barWidth, color='#ADD8E6', label='Home')
+        plt.bar(bar2, away_values, width=barWidth, color='#D3494E', label='Away')
         plt.title("Home and Away Record Breakdown")
         plt.ylabel("Games", fontsize=15)
-        plt.yticks(fontsize=10)
+        plt.yticks(fontsize=12)
         plt.xticks([r + barWidth/2 for r in range(len(labels))], labels, fontsize=15)
         plt.legend(["Correct", "Incorrect"])
         plt.savefig("CFB\\Outputs\\home_away_wins_and_losses_plot.png")
