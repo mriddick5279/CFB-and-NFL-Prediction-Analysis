@@ -8,142 +8,90 @@ def run(file):
         df = pd.read_csv(f'CFB\\Seasons\\{file}')
 
         # Getting total win loss record
-        wins = len(df[df['Outcome'] == 'W'])
-        losses = len(df[df['Outcome'] == 'L'])
+        wins = df.loc[df['Outcome'] == 'W', 'Outcome'].count()
+        losses = df.loc[df['Outcome'] == 'L', 'Outcome'].count()
         print(f"\nFinal Regular Season Record: {wins}-{losses}")
 
-        # Getting win loss records for Home and Away games
-        home_predictions = df[df['Prediction'] == 'Home']
-        away_predictions = df[df['Prediction'] == 'Away']
+        # Getting win-loss record for Home games
 
-        home_wins = len(home_predictions[home_predictions['Outcome'] == 'W'])
-        home_losses = len(home_predictions[home_predictions['Outcome'] == 'L'])
+        home_wins_mask = (df['Prediction'] == 'Home') & (df['Outcome'] == 'W')
+        home_losses_mask = (df['Prediction'] == 'Home') & (df['Outcome'] == 'L')
+
+        home_wins = df.loc[home_wins_mask, 'Outcome'].count()
+        home_losses = df.loc[home_losses_mask, 'Outcome'].count()
         print(f"Home Game Record: {home_wins}-{home_losses}")
 
-        away_wins = len(away_predictions[away_predictions['Outcome'] == 'W'])
-        away_losses = len(away_predictions[away_predictions['Outcome'] == 'L'])
+        # Getting win-loss record for Away games
+
+        away_wins_mask = (df['Prediction'] == 'Away') & (df['Outcome'] == 'W')
+        away_losses_mask = (df['Prediction'] == 'Away') & (df['Outcome'] == 'L')
+
+        away_wins = df.loc[away_wins_mask, 'Outcome'].count()
+        away_losses = df.loc[away_losses_mask, 'Outcome'].count()
         print(f"Away Game Record: {away_wins}-{away_losses}\n")
 
-        # Creating stacked bar plot for overall W/L
-        labels = ['Home','Away']
-        top = [home_losses, away_losses]
-        bott = [home_wins, away_wins]
+        # Getting win-loss record of in-conference games for each Conference
 
-        plt.bar(labels, bott, color='g')
-        plt.bar(labels, top, bottom=bott, color='r')
-        plt.title("Home and Away Record Breakdown")
-        plt.ylabel("Games", fontsize=15)
-        plt.yticks(fontsize=10)
-        plt.legend(["Correct", "Incorrect"])
-        plt.savefig("CFB\\Outputs\\home_away_wins_and_losses_plot.png")
-        plt.close()
+        conferences = ['AAC', 'ACC', 'BIG10', 'BIG12', 'CUSA', 'MAC', 'MWC', 'PAC12', 'SBC', 'SEC']
 
-        # Determining record among conferences
-        conference_records = {'AAC': [0,0], 'ACC': [0,0], 'BIG10': [0,0], 'BIG12': [0,0], 'CUSA': [0,0],'MAC': [0,0], 'MWC': [0,0], 'PAC12': [0,0], 'SBC': [0,0], 'SEC': [0,0]}
+        for conf in conferences:
+            conf_wins_mask = ((df['Home Team Conference'] == conf) & (df['Away Team Conference'] == conf)) & (df['Outcome'] == 'W')
+            conf_losses_mask = ((df['Home Team Conference'] == conf) & (df['Away Team Conference'] == conf)) & (df['Outcome'] == 'L')
 
-        for item in df.itertuples():
+            conf_wins = df.loc[conf_wins_mask, 'Outcome'].count()
+            conf_losses = df.loc[conf_losses_mask, 'Outcome'].count()
 
-            if item[6] == item[9]:
-                conf = item[6]
+            print(f"{conf} Record: {conf_wins}-{conf_losses}")
 
-                if item[12] == 'W':
-                    curr_wins = conference_records[conf][0]
-                    conference_records[conf][0] = curr_wins + 1
+        ### Getting win-loss record for games involving at least one Ranked team
 
-                elif item[12] == 'L':
-                    curr_losses = conference_records[conf][1]
-                    conference_records[conf][1] = curr_losses + 1
+        # Matchup involves at least one ranked team
 
-            elif item[6] == 'PAC12' or item[9] == 'PAC12':
-                if item[12] == 'W':
-                    curr_wins = conference_records['PAC12'][0]
-                    conference_records['PAC12'][0] = curr_wins + 1
+        one_team_ranked_wins_mask = ((df['Home Team Rank'].notna()) | (df['Away Team Rank'].notna())) & (df['Outcome'] == 'W')
+        one_team_ranked_losses_mask = ((df['Home Team Rank'].notna()) | (df['Away Team Rank'].notna())) & (df['Outcome'] == 'L')
 
-                elif item[12] == 'L':
-                    curr_losses = conference_records['PAC12'][1]
-                    conference_records['PAC12'][1] = curr_losses + 1
+        one_team_ranked_wins = df.loc[one_team_ranked_wins_mask, 'Outcome'].count()
+        one_team_ranked_losses = df.loc[one_team_ranked_losses_mask, 'Outcome'].count()
+        print(f"\nGames w/ a Ranked Team: {one_team_ranked_wins}-{one_team_ranked_losses}")
 
-        labels = []
-        top = []
-        bott = []
+        # Matchup involves both teams being ranked
 
-        print("Conference Matchup Records:")
-        for key, value in conference_records.items():
-            print(f"{key} Record: {value[0]}-{value[1]}")
-            labels.append(key)
-            top.append(value[1])
-            bott.append(value[0])
-        print()
+        both_teams_ranked_wins_mask = (df['Home Team Rank'].notna()) & (df['Away Team Rank'].notna()) & (df['Outcome'] == 'W')
+        both_teams_ranked_losses_mask = (df['Home Team Rank'].notna()) & (df['Away Team Rank'].notna()) & (df['Outcome'] == 'L')
 
-        # Creating stacked bar plot for conference W/L 
-        plt.bar(labels, bott, color='g')
-        plt.bar(labels, top, bottom=bott, color='r')
-        plt.title("Conference Wins and Losses Breakdown")
-        plt.ylabel("Games", fontsize=15)
-        plt.yticks(fontsize=10)
-        plt.legend(["Correct", "Incorrect"])
-        plt.savefig("CFB\\Outputs\\conf_wins_and_losses_plot.png")
-        plt.close()
+        both_teams_ranked_wins = df.loc[both_teams_ranked_wins_mask, 'Outcome'].count()
+        both_teams_ranked_losses = df.loc[both_teams_ranked_losses_mask, 'Outcome'].count()
+        print(f"Games b/w Ranked Teams: {both_teams_ranked_wins}-{both_teams_ranked_losses}")
 
-        # Determining record for games involving ranked teams
-        ranked_record = {'One': [0,0], 'Both': [0,0]}
-        for item in df.itertuples():
-
-            if item[5] <= 25 or item[8] <= 25:
-                if item[5] <= 25 and item[8] <= 25:
-                    if item[12] == 'W':
-                        curr_wins = ranked_record['One'][0]
-                        ranked_record['One'][0] = curr_wins + 1
-
-                        curr_wins = ranked_record['Both'][0]
-                        ranked_record['Both'][0] = curr_wins + 1
-
-                    elif item[12] == 'L':
-                        curr_losses = ranked_record['One'][1]
-                        ranked_record['One'][1] = curr_losses + 1
-
-                        curr_losses = ranked_record['Both'][1]
-                        ranked_record['Both'][1] = curr_losses + 1
-
-                else:
-                    if item[12] == 'W':
-                        curr_wins = ranked_record['One'][0]
-                        ranked_record['One'][0] = curr_wins + 1
-
-                    elif item[12] == 'L':
-                        curr_losses = ranked_record['One'][1]
-                        ranked_record['One'][1] = curr_losses + 1
-
-        for key, value in ranked_record.items():
-            if key == 'One':
-                print(f"Games w/ a Ranked Team: {value[0]}-{value[1]}")
-            elif key == 'Both':
-                print(f"Games b/w Ranked Teams: {value[0]}-{value[1]}")
-        print()
-
-        # Record breakdown for each slap type
+        # Getting win-loss record by Slap Type
         # Includes total overall record, home record, and away record for each slap type
+
         slap_types = ['LSSQ','RSSQ','LDQ','LSFS','RSFS','LDFS','LSWP','RSWP','LDWP','OBNL','OBL','OBNLF','OBLF','LSSF','LSSDF','RSSF','RSSDF','RSSQLS','LDF','LDS','LDDF','HB','FT','DIVING','FALLING','OUTRO']
 
-        print("Slap type records:")
-        for st in slap_types:
-            stDF = df[df['Slap Type'] == st]
-            slap_wins = len(stDF[stDF['Outcome'] == 'W'])
-            slap_losses = len(stDF[stDF['Outcome'] == 'L'])
+        for slap in slap_types:
+            slap_wins_mask = (df['Slap Type'] == slap) & (df['Outcome'] == 'W')
+            slap_losses_mask = (df['Slap Type'] == slap) & (df['Outcome'] == 'L')
 
-            print(f"Total {st} Record: {slap_wins}-{slap_losses}")
+            slap_wins = df.loc[slap_wins_mask, 'Outcome'].count()
+            slap_losses = df.loc[slap_losses_mask, 'Outcome'].count()
 
-            sthomeDF = stDF[stDF['Prediction'] == 'Home']
-            stawayDF = stDF[stDF['Prediction'] == 'Away']
+            print(f"\nTotal {slap} Record: {slap_wins}-{slap_losses}")
 
-            slap_wins_home = len(sthomeDF[sthomeDF['Outcome'] == 'W'])
-            slap_losses_home = len(sthomeDF[sthomeDF['Outcome'] == 'L'])
+            slap_home_wins_mask = slap_wins_mask & (df['Prediction'] == 'Home')
+            slap_home_losses_mask = slap_losses_mask & (df['Prediction'] == 'Home')
 
-            slap_wins_away = len(stawayDF[stawayDF['Outcome'] == 'W'])
-            slap_losses_away = len(stawayDF[stawayDF['Outcome'] == 'L'])
+            slap_home_wins = df.loc[slap_home_wins_mask, 'Outcome'].count()
+            slap_home_losses = df.loc[slap_home_losses_mask, 'Outcome'].count()
 
-            print(f"\tHome Breakdown: {slap_wins_home}-{slap_losses_home}")
-            print(f"\tAway Breakdown: {slap_wins_away}-{slap_losses_away}\n")
+            print(f"\tHome Breakdown: {slap_home_wins}-{slap_home_losses}")
+
+            slap_away_wins_mask = slap_wins_mask & (df['Prediction'] == 'Away')
+            slap_away_losses_mask = slap_losses_mask & (df['Prediction'] == 'Away')
+
+            slap_away_wins = df.loc[slap_away_wins_mask, 'Outcome'].count()
+            slap_away_losses = df.loc[slap_away_losses_mask, 'Outcome'].count()
+
+            print(f"\tAway Breakdown: {slap_away_wins}-{slap_away_losses}")
 
     except:
         print("ERROR: Season file most likely not available")
