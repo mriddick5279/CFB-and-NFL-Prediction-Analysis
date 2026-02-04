@@ -1,13 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 def run(file):
 
     try:
-        # Loading dataset
+        ### Loading dataset
         df = pd.read_csv(f'CFB\\Seasons\\{file}')
 
-        # Getting total win loss record
+        ### Getting total win loss record
+
         wins = df.loc[df['Outcome'] == 'W', 'Outcome'].count()
         losses = df.loc[df['Outcome'] == 'L', 'Outcome'].count()
         print(f"\nFinal Regular Season Record: {wins}-{losses}")
@@ -19,7 +21,7 @@ def run(file):
 
         home_wins = df.loc[home_wins_mask, 'Outcome'].count()
         home_losses = df.loc[home_losses_mask, 'Outcome'].count()
-        print(f"Home Game Record: {home_wins}-{home_losses}")
+        print(f"\tHome Game Record: {home_wins}-{home_losses}")
 
         # Getting win-loss record for Away games
 
@@ -28,9 +30,34 @@ def run(file):
 
         away_wins = df.loc[away_wins_mask, 'Outcome'].count()
         away_losses = df.loc[away_losses_mask, 'Outcome'].count()
-        print(f"Away Game Record: {away_wins}-{away_losses}\n")
+        print(f"\tAway Game Record: {away_wins}-{away_losses}\n")
 
-        # Getting win-loss record of in-conference games for each Conference
+        ### Creating stacked bar plot for overall W/L
+
+        # Organizing labels and win-loss values
+        labels = ['Home','Away']
+        home_values = [home_wins, home_losses]
+        away_values = [away_wins, away_losses]
+
+        # Setting bar width and positions
+        barWidth = 0.3
+
+        bar1 = np.arange(len(labels))
+        bar2 = [x + barWidth for x in bar1]
+
+        # Creating and plotting values
+        plt.figure(figsize=(15,12))
+        plt.bar(bar1, home_values, width=barWidth, color='b', label='Home')
+        plt.bar(bar2, away_values, width=barWidth, color='r', label='Away')
+        plt.title("Home and Away Record Breakdown")
+        plt.ylabel("Games", fontsize=15)
+        plt.yticks(fontsize=10)
+        plt.xticks([r + barWidth/2 for r in range(len(labels))], labels, fontsize=15)
+        plt.legend(["Correct", "Incorrect"])
+        plt.savefig("CFB\\Outputs\\home_away_wins_and_losses_plot.png")
+        plt.close()
+
+        ### Getting win-loss record of in-conference games for each Conference
 
         conferences = ['AAC', 'ACC', 'BIG10', 'BIG12', 'CUSA', 'MAC', 'MWC', 'PAC12', 'SBC', 'SEC']
 
